@@ -105,7 +105,10 @@ function QuestionAlternatives(props) {
       level: difficulty === 'Mixed' ? '' : difficulty.toLowerCase(),
       type: radioButtons.filter((button) => button.selected === true),
       amount: amount,
-      category: { name: category, id: categoryId },
+      category: {
+        name: category,
+        id: categoryId === 'random' ? '' : categoryId,
+      },
     })
   }
 

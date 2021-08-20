@@ -111,7 +111,7 @@ function GameView() {
       updateQuestion()
     } else {
       // Validate
-      console.log('END OF GAME RUN VALIDATE')
+      console.log('END OF GAME')
       let current_players = players.players
 
       current_players.forEach((player) => {
